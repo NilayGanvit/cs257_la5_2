@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Checker</title>
+    <link href="{{ url_for('static', filename='css and images/style.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/965c30f03e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="big-img">
+		<div class = "content">
+			<header> ATTENDANCE CHECKER </header>
+			<form  method="post" enctype='multipart/form-data'>
+				<div class = "field space">
+					<p> Attendance.txt - File </p>
+				</div>
+				<div class = "field space">
+					<label for = "filechoice"></label>
+					<input type="file" name="Attendance" id = "filechoice"/>
+				</div>
+				<div class = "field space">
+					<p> Reference.csv - File </p>
+				</div>
+				<div class = "field space">
+					<label for = "filechoice"></label>
+					<input type="file" name="Reference" id = "filechoice" />
+				</div>
+				<div class = "field2 space">
+					<div class = "upload">
+						<input type="submit" name="submit" id="sub" value="UPLOAD THE FILES"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

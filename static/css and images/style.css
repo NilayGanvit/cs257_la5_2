@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-img{
+    background-image: url("../css and images/i..jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.big-img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 999;
+    width: 520px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(255,255,255,0.15);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.65);
+}
+
+.content header{
+    color:white;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    font-family: 'Carter One', cursive;
+}
+
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(241, 236, 236, 0.1);
+}
+
+.field p{
+    height: 100%;
+    width: 100%;
+    padding-top: 8px;
+    background: #ff000094 ;
+    border: .1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+
+.field input{
+    height: 100%;
+    width: 100%;
+    padding-top: 4.5px;
+    padding-left: 102px;
+    background: #00c3ff60 ;
+    border: .1px solid white;;
+    outline: none;
+    color: cyan;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+.field input[type = "file"]::-webkit-file-upload-button{
+    border: 2px solid rgba(0, 255, 255, 0.589);
+    padding: .2em .4em;
+    border-radius: .2px;
+    background: rgba(0, 255, 255, 0.438);
+    color: white;
+    font-size: 16px;
+    font-family: 'Carter One', cursive;
+}
+
+.field input[type = "file"]::-webkit-file-upload-button:hover{
+    background-color: rgba(0,206,209);
+    border: .2px rgba(0,206,209);
+}
+
+
+.field input:hover{
+    border-color: #ff0000;
+    background: #00c3ff80 ;
+}
+
+.space{
+    margin-top: 16px;
+}
+
+.field2{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(241, 236, 236, 0.1);
+}
+
+.field2 input{
+    height: 100%;
+    width: 100%;
+    background: #ff000077 ;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+.field2 .upload{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.upload input[type = "submit"]{
+    background: #FF0000;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Carter One', cursive;
+}
+
+.upload input[type = "submit"]:hover{
+    background: white;
+    color: #FF0000;
+}
+
+.msgdiv{
+    color:rgba(120,255,255);
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 35px 0;
+    font-family: 'Carter One', cursive;
+}
+
+
+
+
+

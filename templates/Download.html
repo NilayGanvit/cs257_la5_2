@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+	<link href="{{ url_for('static', filename='css and images/styledownload.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/965c30f03e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class = "big-img">
+		<div class = "navbar">
+			<div class = "field space">
+				<a href={{ url_for('main') }}>Home</a> 
+			</div>
+			<div class = "field space">
+				<a href="static/final-reference.csv">{{msg}}</a>
+			</div>
+		</div>
+		<div class = "content">
+			<div class = "field2 msgdiv">
+				<p><font face="algerian" color="blue"> {{msg3}} </font></p>
+			</div>
+			<table class= "contenttab" >
+				{% for e in mylist %}
+				<tr>
+					<td>{% print(e[0]) %}</td><td>{% print(e[1]) %}</td>
+				</tr>
+    			{% endfor %}
+			</table>
+			<div class = "field2 msgdiv1">
+				<p> <font face="algerian" color="blue"> {{msg7}} </font></p>
+			</div>
+			<table class = "contenttab">
+				{% for e in mylist2 %}
+				<tr>
+					<td>{% print(e[0]) %}</td><td>{% print(e[1]) %}</td>
+				</tr>
+    			{% endfor %}
+			</table>
+		</div>
+	</div>
+</body>
+</html>

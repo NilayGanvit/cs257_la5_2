@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-img{
+    background-image: url("../css and images/i..jpg");
+}
+
+.navbar{
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    background: hsla(194, 92%, 46%, 0.801);
+}
+
+.field{
+        position: relative;
+        height: 33 px;
+        width: 100px;
+        display: flex;
+}
+
+.field a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'Carter One', cursive;
+    border: 2px solid rgba(0, 255, 255, 0.589);
+    font-size: 16px;
+    background: rgba(0 , 255, 255, 0.438);
+}
+
+.field a:hover{
+    background-color: white;
+    border: 2px solid white;
+    color:hsla(194, 92%, 46%, 0.801);
+}
+
+.space{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.msgdiv{
+    color: hsla(194, 92%, 46%, 0.801);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Carter One', cursive;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.msgdiv1{
+    color: rgba(128, 0, 128, 0.781);
+    text-shadow:2px 2px 2px yellow;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'AlgerianRegular'; 
+    padding-left: 140px;
+    padding-top: 20px;
+}
+
+.contenttab{
+    border-collapse: collapse;
+    font-size: 15px;    
+    margin: 15px 0;
+    min-width: 550px;
+}
+
+.contenttab thead tr{
+    background-color: rgba(25,25,112,0.4);
+    color : white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenttab thead tr{
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.contenttab th, .contenttab td{
+    padding: 12px 15px;
+}
+
+.contenttab tbody tr{
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.contenttab tbody tr:nth-of-type(odd){
+    background-color: hsla(194, 92%, 46%, 0.801);
+}
+
+.contenttab tbody tr:nth-of-type(even){
+    background-color: #ff000077 ;
+}
+
+.content{
+    position: relative;
+    padding-left: 415px;
+}
+
